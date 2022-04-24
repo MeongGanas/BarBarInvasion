@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBarInvasion</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 lg:px-36">
+                    <a href="#home" class="font-bold text-primary block py-6 text-lg">BarBarInvasion</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-xl rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex lg:mr-[100px]">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Tentang Kami</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-28">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2 lg:pl-16 xl:pl-36">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, Kami adalah <span class="block font-bold text-dark text-4xl lg:text-5xl">BarBarInvasion</span></h1>
+                    <h2 class="font-medium text-md mb-8 text-slate-600 md:text-lg lg:text-xl">Murid SMP | <span class="text-primary">Gamers</span> | Bisnis</h2>
+                    <p class="font-medium text-slate-700 mb-10 leading-relaxed md:text-lg">
+                        Main game dan sekolah di SMP Zion mudah dan menyenangkan bukan. <span class="text-dark font-semibold">bukan!</span>
+                    </p>
+
+                    <a href="#" class="font-base font-semibold text-white bg-primary px-6 py-3 rounded-full hover:shadow-xl hover:opacity-75 transition duration-150 ease-in-out ">Hubungi Kami</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2 lg:pr-16 xl:pr-36">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0">
+                        <img src="img/logo.png" alt="logo" class="max-w-full mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-28 mb-40">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:pl-16 xl:pl-36 lg:pr-16 xl:pr-36">
+                    <h1 class="text-xl lg:text-2xl font-bold text-primary">Tentang Kami</h1>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-dark">Yuk, Bermain bersama kami</h1>
+                    <h3 class="text-lg lg:text-xl font-semibold font-dark mt-2">Game yang kami mainkan:</h3>
+                    <div class="mt-5 md:flex md:gap-3 lg:gap-4">
+                        <div class="card">
+                            <img src="img/ML.png" alt="ML">
+                            <div class="text-div">
+                                <h3 class="card-text">Mobile Legend</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/pubg.png" alt="PUBG">
+                            <div class="text-div">
+                                <h3 class="card-text">PUBG Mobile</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/theghost.png" alt="The Ghost">
+                            <div class="text-div">
+                                <h3 class="card-text">The Ghost</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <script src="dist/script.js"></script>
+</body>
+</html>

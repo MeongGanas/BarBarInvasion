@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card{
+        @apply w-full border shadow-xl overflow-hidden rounded-xl mb-5;
+    }
+    .card-text{
+        @apply text-lg text-slate-700 font-semibold;
+    }
+    .text-div{
+        @apply px-3 py-2;
+    }
+    .hamburger-line{
+        @apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
+    }
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-fixed{
+    @apply fixed z-[9999] bg-white bg-opacity-70;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
+}
